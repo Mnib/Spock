@@ -1,0 +1,4 @@
+[submodule "Spock/third-party/imgui"]
+	path = Spock/third-party/imgui
+	url = https://github.com/ocornut/imgui.git
+	branch = docking

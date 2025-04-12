@@ -1,0 +1,11 @@
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+Makefile
+cmake_install.cmake
+.cache
+*.a
+.vscode
+spock-app
+compile_commands.json
+imgui.ini
