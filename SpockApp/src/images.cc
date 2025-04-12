@@ -86,13 +86,13 @@ ExampleImage::ExampleImage() {
     // Load the vertices
     auto vertices = std::vector<ImageVertex>();
     // clang-format off
-    vertices.emplace_back(ImageVertex{glm::vec3{-0.8, -0.8, 0.4f}, glm::vec2{0, 0}});
-    vertices.emplace_back(ImageVertex{glm::vec3{ 0.8, -0.8, 0.4f}, glm::vec2{0, 1}});
-    vertices.emplace_back(ImageVertex{glm::vec3{ 0.8,  0.8, 0.4f}, glm::vec2{1, 1}});
+    vertices.emplace_back(glm::vec3{-0.8, -0.8, 0.4f}, glm::vec2{0, 0});
+    vertices.emplace_back(glm::vec3{ 0.8, -0.8, 0.4f}, glm::vec2{0, 1});
+    vertices.emplace_back(glm::vec3{ 0.8,  0.8, 0.4f}, glm::vec2{1, 1});
 
-    vertices.emplace_back(ImageVertex{glm::vec3{ 0.8,  0.8, 0.4f}, glm::vec2{1, 1}});
-    vertices.emplace_back(ImageVertex{glm::vec3{-0.8,  0.8, 0.4f}, glm::vec2{1, 0}});
-    vertices.emplace_back(ImageVertex{glm::vec3{-0.8, -0.8, 0.4f}, glm::vec2{0, 0}});
+    vertices.emplace_back(glm::vec3{ 0.8,  0.8, 0.4f}, glm::vec2{1, 1});
+    vertices.emplace_back(glm::vec3{-0.8,  0.8, 0.4f}, glm::vec2{1, 0});
+    vertices.emplace_back(glm::vec3{-0.8, -0.8, 0.4f}, glm::vec2{0, 0});
     // clang-format on
 
     m_VertexBuffer = spock::Buffer::CreateVertexBuffer<ImageVertex>(vertices);

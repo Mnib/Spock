@@ -9,7 +9,7 @@ int main() {
     auto settings = spock::SpockSettings{};             // Get the default settings
     settings.PresentModes = {VK_PRESENT_MODE_FIFO_KHR}; // Set present mode to V-Sync
 
-    spock::Application app(std::move(settings));
+    spock::Application app(settings);
 
     app.PushLayer(std::make_shared<ExampleLayer>(app));
 

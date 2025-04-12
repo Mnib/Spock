@@ -77,22 +77,22 @@ ExampleShapes::ExampleShapes() {
     auto vertices = std::vector<Vertex>();
     // clang-format off
     // First plane
-    vertices.emplace_back(Vertex{glm::vec3{-0.8, -0.8, 0}, glm::vec3{1, 0, 0}});
-    vertices.emplace_back(Vertex{glm::vec3{ 0.8, -0.8, 0}, glm::vec3{0, 1, 0}});
-    vertices.emplace_back(Vertex{glm::vec3{ 0.8,  0.8, 0}, glm::vec3{0, 0, 1}});
+    vertices.emplace_back(glm::vec3{-0.8, -0.8, 0}, glm::vec3{1, 0, 0});
+    vertices.emplace_back(glm::vec3{ 0.8, -0.8, 0}, glm::vec3{0, 1, 0});
+    vertices.emplace_back(glm::vec3{ 0.8,  0.8, 0}, glm::vec3{0, 0, 1});
 
-    vertices.emplace_back(Vertex{glm::vec3{ 0.8,  0.8, 0}, glm::vec3{0, 0, 1}});
-    vertices.emplace_back(Vertex{glm::vec3{-0.8,  0.8, 0}, glm::vec3{0, 1, 0}});
-    vertices.emplace_back(Vertex{glm::vec3{-0.8, -0.8, 0}, glm::vec3{1, 0, 0}});
+    vertices.emplace_back(glm::vec3{ 0.8,  0.8, 0}, glm::vec3{0, 0, 1});
+    vertices.emplace_back(glm::vec3{-0.8,  0.8, 0}, glm::vec3{0, 1, 0});
+    vertices.emplace_back(glm::vec3{-0.8, -0.8, 0}, glm::vec3{1, 0, 0});
 
     // Second plane
-    vertices.emplace_back(Vertex{glm::vec3{-0.8, -0.8, -0.4f}, glm::vec3{1, 0, 0}});
-    vertices.emplace_back(Vertex{glm::vec3{ 0.8, -0.8, -0.4f}, glm::vec3{0, 1, 0}});
-    vertices.emplace_back(Vertex{glm::vec3{ 0.8,  0.8, -0.4f}, glm::vec3{0, 0, 1}});
+    vertices.emplace_back(glm::vec3{-0.8, -0.8, -0.4f}, glm::vec3{1, 0, 0});
+    vertices.emplace_back(glm::vec3{ 0.8, -0.8, -0.4f}, glm::vec3{0, 1, 0});
+    vertices.emplace_back(glm::vec3{ 0.8,  0.8, -0.4f}, glm::vec3{0, 0, 1});
 
-    vertices.emplace_back(Vertex{glm::vec3{ 0.8,  0.8, -0.4f}, glm::vec3{0, 0, 1}});
-    vertices.emplace_back(Vertex{glm::vec3{-0.8,  0.8, -0.4f}, glm::vec3{0, 1, 0}});
-    vertices.emplace_back(Vertex{glm::vec3{-0.8, -0.8, -0.4f}, glm::vec3{1, 0, 0}});
+    vertices.emplace_back(glm::vec3{ 0.8,  0.8, -0.4f}, glm::vec3{0, 0, 1});
+    vertices.emplace_back(glm::vec3{-0.8,  0.8, -0.4f}, glm::vec3{0, 1, 0});
+    vertices.emplace_back(glm::vec3{-0.8, -0.8, -0.4f}, glm::vec3{1, 0, 0});
     // clang-format on
 
     m_VertexBuffer = spock::Buffer::CreateVertexBuffer<Vertex>(vertices);
