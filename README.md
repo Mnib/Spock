@@ -1,7 +1,7 @@
 # Spock
 
 A minimal library for Vulkan.
-![screenshot](https://github.com/user-attachments/assets/d6ae0686-bd5c-4478-9aa9-7490d8a61c8e)
+![screen](https://github.com/user-attachments/assets/8ea13617-e1ae-419c-8d3c-c0847d6c155b)
 
 ## Getting started
 
